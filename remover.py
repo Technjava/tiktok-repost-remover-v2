@@ -45,7 +45,7 @@ REQUEST_DELAY = 1  # Seconds to wait between requests
 
 # Common cookies for authentication
 EXTRA_COOKIES = {
-    "sid_tt": "" # Find it by using your browser's developer tools and go to your account with the panel opened, and find a /items query and look into cookies
+    "sid_tt": "" # Find it by using your browser's developer tools and go to your profile with the panel opened, and find a /items query and look into cookies
 }
 
 def get_common_headers(username: str, cookies: Dict[str, str], is_delete: bool = False) -> Dict[str, str]:

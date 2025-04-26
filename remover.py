@@ -45,21 +45,7 @@ REQUEST_DELAY = 1  # Seconds to wait between requests
 
 # Common cookies for authentication
 EXTRA_COOKIES = {
-    "ttwid": "", # Get all theses cookies from the browser's developer tools request : https://www.tiktok.com/api/repost/item_list/
-    "tt_chain_token": "", #
-    "tiktok_webapp_theme": "dark",
-    "passport_csrf_token": "",
-    "passport_csrf_token_default": "",
-    "passport_auth_status": "%2C",
-    "passport_auth_status_ss": "%2C",
-    "sid_guard": "",
-    "uid_tt": "",
-    "uid_tt_ss": "",
-    "sid_tt": "",
-    "sessionid": "",
-    "sessionid_ss": "",
-    "sid_ucp_v1": "",
-    "s_v_web_id": ""
+    "sid_tt": "" # Find it by using your browser's developer tools and go to your account with the panel opened, and find a /items query and look into cookies
 }
 
 def get_common_headers(username: str, cookies: Dict[str, str], is_delete: bool = False) -> Dict[str, str]:
